@@ -1,0 +1,24 @@
+{
+  "name": "photogalleryremote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasAnkcorn/PhotoGalleryRemote.git"
+  },
+  "author": "Thomas Ankcorn",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ThomasAnkcorn/PhotoGalleryRemote/issues"
+  },
+  "homepage": "https://github.com/ThomasAnkcorn/PhotoGalleryRemote#readme",
+  "dependencies": {
+    "express": "4.16.2",
+    "socket.io": "2.0.3"
+  }
+}
