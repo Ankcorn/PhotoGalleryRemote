@@ -1,0 +1,29 @@
+body{
+    background-color:#547AA5
+}
+
+.controls{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width:100%;
+    min-height:100%;
+    align-items:center;
+}
+
+button{
+    padding:5% 5%;
+    margin:2% 2%;
+    background-color:#293132;
+    box-shadow: 10px 10px 5px #1A2021;
+    border-style:none;
+    color:#50D8D7;
+    min-width:120px;
+    min-height:120px;
+}
+
+@media all and (max-width: 500px) {
+  .controls{
+    flex-direction: column;
+  }
+}

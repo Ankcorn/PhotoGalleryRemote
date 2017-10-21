@@ -9,13 +9,15 @@ app.get('/', function(req, res,next) {
     res.sendFile(__dirname + '/../client/index.html');
 });
 
-io.on('connection', (client) => {
-    client.on('event', (data) => {
+const remote = io.on('connection', (client) => {
+    console.log('connection made')
+
+    client.on('click', (data) => {
         console.log(data)
-        client.emit('broadcast', data); //Sends event data to all clients
+        remote.emit('change',data); //Sends event data browser
     })
 });
 
 server.listen(4200, () => {
-    console.log("serving remote over port 3000");
+    console.log("serving remote over port 4200");
 })
