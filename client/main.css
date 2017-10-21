@@ -22,8 +22,9 @@ button{
     min-height:120px;
 }
 
-@media all and (max-width: 500px) {
+/*@media all and (max-width: 500px) {
   .controls{
     flex-direction: column;
   }
 }
+*/
